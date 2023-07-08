@@ -166,10 +166,10 @@ func (d *Client) Deploy(input string, appName string) error {
 		if err != nil {
 			return err
 		}
-		err = d.IsDeployed(appID)
-		if err != nil {
-			return err
-		}
+		// err = d.IsDeployed(appID)
+		// if err != nil {
+		// 	return err
+		// }
 		return nil
 	}
 	return errors.Errorf("Please provide valid json input")
